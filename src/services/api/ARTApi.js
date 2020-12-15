@@ -1,0 +1,1 @@
+export const API_ART = 'http://newdemo.aplikasiskripsi.com/erick_lelang_native';

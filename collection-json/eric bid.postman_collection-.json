@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "20d72686-e2b8-44f7-8f23-5eb9404be06e",
+		"name": "eric bid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "jojo",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://newdemo.aplikasiskripsi.com/erick_lelang_native/services.php?type=doLogin",
+					"protocol": "http",
+					"host": [
+						"newdemo",
+						"aplikasiskripsi",
+						"com"
+					],
+					"path": [
+						"erick_lelang_native",
+						"services.php"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "doLogin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "jaju",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jaju@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "telp",
+							"value": "0812345678",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "jalan jalan",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "jaju",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://newdemo.aplikasiskripsi.com/erick_lelang_native/services.php?type=doRegister",
+					"protocol": "http",
+					"host": [
+						"newdemo",
+						"aplikasiskripsi",
+						"com"
+					],
+					"path": [
+						"erick_lelang_native",
+						"services.php"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "doRegister"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDatalelang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://newdemo.aplikasiskripsi.com/erick_lelang_native/services.php?type=getLelang",
+					"protocol": "http",
+					"host": [
+						"newdemo",
+						"aplikasiskripsi",
+						"com"
+					],
+					"path": [
+						"erick_lelang_native",
+						"services.php"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "getLelang"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLastLelang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lelang_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jaju@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "telp",
+							"value": "0812345678",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "alamat",
+							"value": "jalan jalan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "jaju",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://newdemo.aplikasiskripsi.com/erick_lelang_native/services.php?type=getLastLelang",
+					"protocol": "http",
+					"host": [
+						"newdemo",
+						"aplikasiskripsi",
+						"com"
+					],
+					"path": [
+						"erick_lelang_native",
+						"services.php"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "getLastLelang"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addBid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_lelang",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_bidder",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://newdemo.aplikasiskripsi.com/erick_lelang_native/services.php?type=addBid",
+					"protocol": "http",
+					"host": [
+						"newdemo",
+						"aplikasiskripsi",
+						"com"
+					],
+					"path": [
+						"erick_lelang_native",
+						"services.php"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "addBid"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allBid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_lelang",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id_bidder",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "telp",
+							"value": "0812345678",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "alamat",
+							"value": "jalan jalan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "jaju",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://newdemo.aplikasiskripsi.com/erick_lelang_native/services.php?type=allBid",
+					"protocol": "http",
+					"host": [
+						"newdemo",
+						"aplikasiskripsi",
+						"com"
+					],
+					"path": [
+						"erick_lelang_native",
+						"services.php"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "allBid"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "winBid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_lelang",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_bidder",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "telp",
+							"value": "0812345678",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "alamat",
+							"value": "jalan jalan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "jaju",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://newdemo.aplikasiskripsi.com/erick_lelang_native/services.php?type=winBid",
+					"protocol": "http",
+					"host": [
+						"newdemo",
+						"aplikasiskripsi",
+						"com"
+					],
+					"path": [
+						"erick_lelang_native",
+						"services.php"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "winBid"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

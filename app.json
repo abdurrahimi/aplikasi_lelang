@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Lelang Indonesia Art",
+    "slug": "lelang-indonesia-art",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo-auction.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f0e68c"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.ds.lelangindonesia",
+      "versionCode": 1
+    },
+    "sdkVersion": "37.0.0",
+    "description": ""
+  }
+}
